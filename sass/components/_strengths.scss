@@ -1,0 +1,114 @@
+.strengths {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  & > .container {
+    text-align: left;
+  }
+}
+
+.descript-list-text {
+  line-height: 1.7;
+  color: $text-color;
+  margin: 0;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .descript-list li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .descript-list-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    color: $title-color;
+  }
+
+  .descript-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    background-color: $team-background-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .descript-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .descript-list-item {
+    width: 354px;
+    // &:nth-child(odd) {
+    //   margin-right: 30px;
+    // }
+  }
+
+  .descript-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    background-color: $team-background-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  .descript-list-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    color: $title-color;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .descript-list {
+    display: flex;
+    flex-wrap: nowrap;
+    & > li {
+      width: calc((100% - (3 * 30 px)) / 4);
+    }
+    & > li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+// .descript-list {
+//   display: flex;
+
+//   & > li {
+//     width: calc((100% - (3 * 30 px)) / 4);
+//   }
+//   & > li:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+
+// .descript-picture {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+//   height: 120px;
+//   background-color: $team-background-color;
+//   border-radius: 4px;
+//   margin-bottom: 30px;
+// }
