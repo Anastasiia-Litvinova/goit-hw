@@ -1,7 +1,7 @@
 .our-team {
   background-color: $team-background-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   & > .container {
     margin-bottom: 0;
   }
@@ -12,8 +12,10 @@
 }
 
 .team-list {
-  display: flex;
-  margin-top: 50px;
+  margin-top: 30px;
+
+  //   display: flex;
+  // margin-top: 50px;
 
   & > li {
     background-color: $hero-title-color;
@@ -22,8 +24,10 @@
     border-radius: 0px 0px 4px 4px;
   }
 
-  & > li:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    //   & > li:not(:last-child) {
+    //   margin-right: 30px;
+    // }
   }
 }
 
@@ -50,7 +54,7 @@
 
 .worker-info-item {
   background-color: $hero-title-color;
-  width: 270px;
+  width: 450px;
 }
 
 .card-info {
