@@ -1,11 +1,11 @@
 .works {
   padding-top: 60px;
   padding-bottom: 60px;
-  // margin: 60px;
 
-  // @media screen and (min-width: 1200px) {
-  //   margin: 94px 15px;
-  // }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .buttons-list {
@@ -15,7 +15,12 @@
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
     justify-content: center;
   }
 }
@@ -69,8 +74,6 @@
   }
   @media screen and (min-width: 1200px) {
     width: $portfolio-box-width;
-    margin-right: 30px;
-    margin-bottom: 30px;
   }
 }
 
