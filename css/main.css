@@ -930,11 +930,12 @@ body {
 .social-item {
   width: 44px;
   height: 44px;
+  margin: 5px;
 }
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  margin: -5px;
   padding: 0;
 }
 
