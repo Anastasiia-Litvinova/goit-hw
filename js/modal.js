@@ -1,13 +1,26 @@
 (() => {
-    const menuBtnRef = document.querySelector("[data-menu-button]");
-    const mobileMenuRef = document.querySelector("[data-menu]");
-    const mobileBtnClose = document.querySelector("[data-menu-close]");
+    const refs = {
+      openModalBtn: [...document.querySelectorAll('[data-modal-open]')],
+      closeModalBtn: document.querySelector('[data-modal-close]'),
+      modal: document.querySelector('[data-modal]'),
+    };
   
-    menuBtnRef.addEventListener("click", () => {
-      mobileMenuRef.classList.toggle("is-open");
+    refs.openModalBtn.forEach(e => {
+      e.addEventListener('click', toggleModal);
     })
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+  
+    function toggleModal() {
+      refs.modal.classList.toggle('is-hidden');
+    }
+  })();
+  
+  (() => {
+  document.querySelector('.js-registration-form').addEventListener('submit', e => {
+    e.preventDefault();
 
-    mobileBtnClose.addEventListener('click', () => {
-      mobileMenuRef.classList.toggle("is-open");
-    });
-  })()
+    new FormData(e.currentTarget).forEach((value, name) =>
+      console.log(`${name}: ${value}`),
+    );
+  });
+})();

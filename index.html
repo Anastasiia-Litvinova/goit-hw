@@ -16,7 +16,7 @@
 
 <body>
     <!--Шапка сайта-->
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header-wrapper">
                 <nav class="navigation">
@@ -475,54 +475,56 @@
     <!--Подвал-->
    <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-address">
-                <a class="link-logo" href="./index.html" title="WebStudio">Web<span
-                        class="footer-logo-studio">Studio</span></a>
-                <address class="address">
-                    <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
-                    <ul class="footer-contacts-list">
-                        <li class="footer-list-item">
-                            <a class="footer-contact-link" href="mailto:info@example.com" title="Написать">info@example.com</a>
+            <div class="tablet-footer-wrapper">
+                <div class="footer-address">
+                    <a class="link-logo" href="./index.html" title="WebStudio">Web<span
+                            class="footer-logo-studio">Studio</span></a>
+                    <address class="address">
+                        <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
+                        <ul class="footer-contacts-list">
+                            <li class="footer-list-item">
+                                <a class="footer-contact-link" href="mailto:info@example.com" title="Написать">info@example.com</a>
+                            </li>
+                            <li>
+                                <a class="footer-contact-link" href="tel:+380991111111" title="Позвонить">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-socialnet">
+                    <p class="footer-text">Присоединяйтесь</p>
+                    <ul class="list social-list">
+                        <li class="social-item">
+                            <a href="" class="social-link">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./img/svg.opt/new-sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li>
-                            <a class="footer-contact-link" href="tel:+380991111111" title="Позвонить">+38 099 111 11 11</a>
+                
+                        <li class="social-item">
+                            <a href="" class="social-link">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./img/svg.opt/new-sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="social-link">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./img/svg.opt/new-sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="social-link">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./img/svg.opt/new-sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="footer-socialnet">
-                <p class="footer-text">Присоединяйтесь</p>
-                <ul class="list social-list">
-                    <li class="social-item">
-                        <a href="" class="social-link">
-                            <svg class="social-icon" width="20" height="20">
-                                <use href="./img/svg.opt/new-sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-            
-                    <li class="social-item">
-                        <a href="" class="social-link">
-                            <svg class="social-icon" width="20" height="20">
-                                <use href="./img/svg.opt/new-sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="" class="social-link">
-                            <svg class="social-icon" width="20" height="20">
-                                <use href="./img/svg.opt/new-sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="" class="social-link">
-                            <svg class="social-icon" width="20" height="20">
-                                <use href="./img/svg.opt/new-sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="footer-subscribe">
                 <p class="footer-form-text">Подпишитесь на рассылку</p>
@@ -541,7 +543,7 @@
         </div>
     </footer>
 
-    <!--<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-button" data-modal-close>
                 <svg class="btn-close-icon" width="11" height="11">
@@ -588,7 +590,7 @@
                         <textarea name="comment" placeholder="Введите текст"></textarea>
                     </label>
                     
-                <div class="form-submit">
+                <div class="form-submit-wrapper">
                     <label class="form-submit" for="checkbox">
                         <input class="form-confirm visually-hidden" type="checkbox" name="confirm" id="checkbox">
                         <span class="checkbox-icon"></span>
@@ -600,10 +602,10 @@
 
             </form>
         </div>
-    </div> -->
-    
-    <script src="./js/modal.js"></script>
+    </div>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+    
 </body>
 
 </html>
