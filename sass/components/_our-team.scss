@@ -31,18 +31,15 @@
 
   @media screen and (max-width: 767px) {
     width: 450px;
-    height: 622px;
   }
 
   @media screen and (min-width: 768px) {
     width: 354px;
-    height: 536px;
     margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 270px;
-    height: 428px;
     margin: 15px;
   }
 }
@@ -66,10 +63,6 @@
 .worker-position {
   text-transform: capitalize;
   margin-bottom: 16px;
-}
-
-.worker-info-item {
-  background-color: $hero-title-color;
 }
 
 .card-info {

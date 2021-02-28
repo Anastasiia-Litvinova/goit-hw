@@ -11,6 +11,10 @@
   color: $logo-black-color;
 }
 
+.header {
+  border-bottom: 1px solid $header-border-color;
+}
+
 @media screen and (max-width: 767px) {
   .list-nav {
     display: none;
@@ -71,9 +75,7 @@
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
-  .header {
-    border-bottom: 1px solid $header-border-color;
-  }
+
   .nav-list,
   .contacts-list {
     display: none;
@@ -125,6 +127,7 @@
   .social-mobile-menu-list {
     margin-top: 64px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
 
