@@ -4,7 +4,7 @@
     color: $accent-color;
   }
 
-  color: var(--footer-email-tel);
+  color: $footer-email-tel;
   display: inline-block;
 }
 

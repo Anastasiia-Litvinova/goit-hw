@@ -1,20 +1,42 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.clients-list {
-  margin-top: 50px;
+.section-title {
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 
 .clients-list-item {
-  width: 170px;
+  width: calc((100% - 4*15)/2)
   height: 90px;
+  margin: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
 .clients-list-link {
