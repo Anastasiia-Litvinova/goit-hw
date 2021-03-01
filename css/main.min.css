@@ -1172,21 +1172,25 @@ form {
   line-height: 14px;
   letter-spacing: 0.03em;
 }
-@media screen and (max-width: 479px) {
-  .form-submit {
-    display: block;
-  }
-}
 @media screen and (min-width: 1200px) {
   .form-submit {
     font-size: 14px;
     line-height: 24px;
   }
 }
+@media screen and (max-width: 479px) {
+  .form-submit {
+    display: block;
+  }
+}
 .policy-info {
   color: #2196f3;
   text-decoration: underline;
-  margin-left: 27px;
+}
+@media screen and (max-width: 479px) {
+  .policy-info {
+    margin-left: 27px;
+  }
 }
 .form-confirm {
   position: absolute;
