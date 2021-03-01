@@ -1003,11 +1003,19 @@ img {
   transform: translate(-50%, -50%);
   width: 450px;
   height: 609px;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 300px;
+    height: auto;
+    padding: 15px;
+    padding-top: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1046,6 +1054,12 @@ form {
   margin-bottom: 12px;
   color: #212121;
 }
+@media screen and (max-width: 479px) {
+  .form-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form-text {
     line-height: 23px;
@@ -1074,6 +1088,12 @@ form {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .form-container input {
+    padding-left: 15px;
+    width: 270px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-container input {
@@ -1124,6 +1144,12 @@ form {
   height: 120px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .form-field textarea {
+    width: 270px;
+    height: 90px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form-field textarea {
     width: 448px;
@@ -1137,7 +1163,6 @@ form {
   margin: 0;
 }
 .form-submit {
-  display: inline-block;
   margin: 0;
   padding: 0;
   margin-top: 20px;
@@ -1146,6 +1171,11 @@ form {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 479px) {
+  .form-submit {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-submit {
@@ -1156,6 +1186,7 @@ form {
 .policy-info {
   color: #2196f3;
   text-decoration: underline;
+  margin-left: 27px;
 }
 .form-confirm {
   position: absolute;
@@ -1200,5 +1231,10 @@ form {
   color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin: 30px 85px 0;
+}
+@media screen and (max-width: 479px) {
+  .sub-btn {
+    margin: 20px 40px 0;
+  }
 }
 /*# sourceMappingURL=main.min.css.map */

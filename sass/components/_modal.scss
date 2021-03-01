@@ -16,12 +16,19 @@
   width: 450px;
   height: 609px;
 
+  @media screen and (max-width: 479px) {
+    width: 300px;
+    height: auto;
+    padding: 15px;
+    padding-top: 30px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
   }
 
-  background-color: #ffffff;
+  background-color: $hero-title-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -64,7 +71,10 @@ form {
   margin-bottom: 12px;
 
   color: $title-color;
-
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
   @media screen and (min-width: 1200px) {
     line-height: 23px;
   }
@@ -97,6 +107,10 @@ form {
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (max-width: 479px) {
+      padding-left: 15px;
+      width: 270px;
+    }
     @media screen and (min-width: 1200px) {
       width: 448px;
       padding-left: 42px;
@@ -153,6 +167,11 @@ form {
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (max-width: 479px) {
+      width: 270px;
+      height: 90px;
+    }
+
     @media screen and (min-width: 1200px) {
       width: 448px;
     }
@@ -169,7 +188,6 @@ form {
 }
 
 .form-submit {
-  display: inline-block;
   margin: 0;
   padding: 0;
   margin-top: 20px;
@@ -180,6 +198,10 @@ form {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 479px) {
+    display: block;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 24px;
@@ -189,6 +211,7 @@ form {
 .policy-info {
   color: $accent-color;
   text-decoration: underline;
+  margin-left: 27px;
 }
 
 .form-confirm {
@@ -243,4 +266,8 @@ form {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   margin: 30px 85px 0;
+
+  @media screen and (max-width: 479px) {
+    margin: 20px 40px 0;
+  }
 }
