@@ -757,6 +757,15 @@ img {
   margin: -15px;
 }
 
+@media screen and (max-width: 479px) {
+  .clients-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients-list {
     justify-content: space-between;
