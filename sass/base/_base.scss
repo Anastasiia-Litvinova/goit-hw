@@ -43,3 +43,9 @@ body {
   background-color: $hero-title-color;
   color: $text-color;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

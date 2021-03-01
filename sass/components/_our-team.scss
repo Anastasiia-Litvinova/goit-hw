@@ -2,6 +2,7 @@
   background-color: $team-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
+
   & > .container {
     margin-bottom: 0;
   }
@@ -30,7 +31,7 @@
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (max-width: 767px) {
-    width: 450px;
+    max-width: 450px;
   }
 
   @media screen and (min-width: 768px) {
