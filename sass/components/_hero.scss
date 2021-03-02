@@ -1,5 +1,6 @@
 .hero.overlay {
   width: 100vw;
+  max-width: 480px;
   height: 400px;
   margin: 0 auto;
   background-image: linear-gradient(
@@ -7,7 +8,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../img/bgImg-mob.jpg");
+    url("../img/bgImg-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -23,7 +24,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../img/bgImg-mob@2x.jpg");
+      url("../img/bgImg-mob@2x.jpg");
   }
 }
 
@@ -67,15 +68,16 @@
   color: $hero-title-color;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .hero.overlay {
-    width: 100%;
+    width: 100vw;
+    max-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../img/bgImg-tab.jpg");
+      url("../img/bgImg-tab.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -87,15 +89,24 @@
     screen and (min-resolution: 2dppx) {
     .hero.overlay {
       width: 100%;
+      max-width: 768px;
+
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../../img/bgImg-tab@2x.jpg");
+        url("../img/bgImg-tab@2x.jpg");
     }
   }
 }
+
+@media screen and (min-width: 769px) {
+  .hero.overlay {
+    max-width: 1600px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero.overlay {
     width: 100%;
@@ -106,7 +117,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../img/bgImg.jpg");
+      url("../img/bgImg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -144,7 +155,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../../img/bgImg@2x.jpg");
+        url("../img/bgImg@2x.jpg");
     }
   }
 }
